@@ -17,7 +17,6 @@ alias ...='cd ../../..'
 # Directory shortcuts
 alias repos='cd ~/repos'
 alias docs='cd ~/Documents'
-alias leet='cd ~/repos/leetcode'
 
 # git shortcuts
 alias gs='git status'
