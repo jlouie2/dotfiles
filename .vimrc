@@ -24,6 +24,7 @@ Plugin 'jiangmiao/auto-pairs'
 """ Colorschemes
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'jacoborus/tender.vim'
+Plugin 'sickill/vim-monokai'
 
 """ Languages
 Plugin 'rust-lang/rust.vim'
@@ -231,8 +232,8 @@ let g:ycm_autoclose_preview_window_after_completion = 1
 let g:ycm_autoclose_preview_window_after_insertion = 1
 
 """ Colorschemes
-" Options: tender
-colorscheme tender
+" Options: tender, monokai
+colorscheme monokai
 
 
 """ Languages
@@ -255,11 +256,15 @@ set laststatus=2
 set noshowmode
 " Advanced configuration
 let g:lightline = {
+    \ 'colorscheme': 'wombat',
+    \ 'active': {
+    \   'left': [ [ 'mode', 'paste' ], 
+    \             [ 'gitfugitive', 'readonly', 'filename', 'modified' ] ]
+    \ },
     \ 'component_function': {
-    \   'gitbranch': 'fugitive#head'
+    \   'gitfugitive': 'fugitive#statusline'
     \ },
     \ }
-
 
 
 
