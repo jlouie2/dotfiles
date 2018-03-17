@@ -231,6 +231,13 @@ let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
 let g:ycm_autoclose_preview_window_after_completion = 1
 let g:ycm_autoclose_preview_window_after_insertion = 1
 
+" Ensure the correct python interpreter is sourced for autocompletion
+if exists("$VIRTUAL_ENV")
+    let g:ycm_python_binary_path = 'python'
+else
+    let g:ycm_python_binary_path = '/usr/bin/python3'
+endif
+
 """ Colorschemes
 " Options: tender, monokai
 colorscheme monokai

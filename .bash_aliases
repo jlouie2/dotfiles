@@ -30,3 +30,6 @@ alias fgrep='fgrep --color=auto'
 
 # pipenv shortcut
 alias prp='pipenv run python'
+
+# alias for vim to neovim
+alias vim='nvim'
